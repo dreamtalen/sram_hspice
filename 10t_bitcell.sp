@@ -2,24 +2,7 @@
  .lib '/home/eda/dk/TSMC_65/cadence/models/hspice/crn65gplus_2d5_lk_v1d0.l' tt
 
  .TEMP 25
-
-*.BIPOLAR
-*.RESI = 2000
-*.RESVAL
-*.CAPVAL
-*.DIOPERI
-*.DIOAREA
-*.EQUATION
-*.SCALE METER
-*.MEGA
-.PARAM
-
-*.GLOBAL vdd
-+        gnd
-
-*.PIN vdd
-*+    gnd
-
+ 
 *define options
  .option post=1
  .option accurate=1
