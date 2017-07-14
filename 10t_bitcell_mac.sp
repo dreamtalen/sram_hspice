@@ -44,7 +44,7 @@ vwwlb WWLB 0 pulse (supply0 0 'pw-5*slew' 'slew*2.5' 'slew*2.5' pw '2*pw')
 vwbl WBL 0 pulse (0 supply0 'pw-5*slew' 'slew*2.5' 'slew*2.5' 'pw*2' 'pw*4')
 vwblb WBLB 0 pulse (supply0 0 'pw-5*slew' 'slew*2.5' 'slew*2.5' 'pw*2' 'pw*4')
 
-.TRAN 3.5P 'st' SWEEP MONTE=10
+.TRAN 3.5P 'st' SWEEP MONTE=300
 .measure TRAN delay_write1
 +	TRIG v(WWLB) VAL='supply0/2' RISE=1
 +	TARG v(q) VAL='supply0/2' RISE=1
