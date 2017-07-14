@@ -2,7 +2,7 @@
  .lib '/home/eda/dk/TSMC_65/cadence/models/hspice/crn65gplus_2d5_lk_v1d0.l' tt
 
  .TEMP 25
- 
+
 *define options
  .option post=1
  .option accurate=1
@@ -17,7 +17,7 @@
  .param slew=3.44e-10
  .param load=5.9e-16
 
-.SUBCKT 10TSRAM_test_nmos_mac GND Q QB RBL RWL RWLB VDD WBL WBLB WWLB
+.SUBCKT sram_10t_bitcell GND Q QB RBL RWL RWLB VDD WBL WBLB WWLB
 *.PININFO GND:I Q:I QB:I RWL:I RWLB:I VDD:I WBL:I WBLB:I WWLB:I RBL:O
 MM8 net08 RWL RBL GND nch l=60n w=120.0n m=1
 MM7 net08 QB GND GND nch l=60n w=120.0n m=1
@@ -31,7 +31,7 @@ MM3 Q QB VDD VDD pch l=60n w=360.0n m=1
 MM4 QB Q VDD VDD pch l=60n w=360.0n m=1
 .ENDS
 
-XI17 gnd q qb RBL RWL RWLB vdd WBL WBLB WWLB 10TSRAM_test_nmos_mac
+XI17 gnd q qb RBL RWL RWLB vdd WBL WBLB WWLB sram_10t_bitcell
 
 vvdd VDD 0 dc 'supply0'
 ccap_q RBL 0 'load'
