@@ -9,7 +9,7 @@
  .option gmin=1e-15
  .option gmindc=1.0e-15
  .option method=gear
-
+ .option mcbrief=1
 *define parameters
  .param supply0=0.35
  .param SD=50n
