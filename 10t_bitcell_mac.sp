@@ -23,8 +23,8 @@ XMM8 net08 RWL RBL GND nch_mac l=60n w=120.0n m=1
 XMM7 net08 QB GND GND nch_mac l=60n w=120.0n m=1
 XMM2 QB Q GND GND nch_mac l=60n w=120.0n m=1
 XMM0 Q QB GND GND nch_mac l=60n w=120.0n m=1
-XMM1 WBL WWLB Q GND nch_mac l=60n w=120.0n m=1
-XMM5 WBLB WWLB QB GND nch_mac l=60n w=120.0n m=1
+XMM1 WBL WWLB Q GND nch_mac l=60n w=240.0n m=1
+XMM5 WBLB WWLB QB GND nch_mac l=60n w=240.0n m=1
 XMM9 net08 RWLB RBL VDD pch_mac l=60n w=360.0n m=1
 XMM6 net08 QB VDD VDD pch_mac l=60n w=360.0n m=1
 XMM3 Q QB VDD VDD pch_mac l=60n w=360.0n m=1
