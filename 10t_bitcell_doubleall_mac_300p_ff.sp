@@ -1,7 +1,7 @@
  * include model and subckts
- .lib '/home/eda/dk/TSMC_65/cadence/models/hspice/crn65gplus_2d5_lk_v1d0.l' ss
+ .lib '/home/eda/dk/TSMC_65/cadence/models/hspice/crn65gplus_2d5_lk_v1d0.l' ff
 
- .TEMP -25
+ .TEMP 85
 
 *define options
  .option post=1
