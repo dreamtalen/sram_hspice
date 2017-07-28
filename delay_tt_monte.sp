@@ -5,7 +5,7 @@
 
  .TEMP 25
 *define options
- .option post=0
+ .option post=1
  .option accurate=1
  .option gmin=1e-15
  .option gmindc=1.0e-15
