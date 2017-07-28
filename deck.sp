@@ -24,9 +24,9 @@
  * .include 'mem_top_mac.sp'
  .include 'mem_pipeline.cdl'
 
- xmem_pipeline clk wen A[5] A[4] A[3] A[2] A[1] A[0] D[15] D[14] D[13] 
-+ D[12] D[11] D[10] D[9] D[8] D[7] D[6] D[5] D[4] D[3] D[2] D[1] D[0] Q[15] 
-+ Q[14] Q[13] Q[12] Q[11] Q[10] Q[9] Q[8] Q[7] Q[6] Q[5] Q[4] Q[3] Q[2] Q[1] Q[0] mem_pipeline
+ xmem_pipeline clk wen A5 A4 A3 A2 A1 A0 D15 D14 D13 
++ D12 D11 D10 D9 D8 D7 D6 D5 D4 D3 D2 D1 D0 Q15 
++ Q14 Q13 Q12 Q11 Q10 Q9 Q8 Q7 Q6 Q5 Q4 Q3 Q2 Q1 Q0 mem_pipeline
 
  vvdd vdd 0 dc 'supply0'
  vvss vss 0 dc 0
