@@ -1,18 +1,18 @@
-* Library name: 6TSRAM_45n
+* Library name: 6TSRAM_65n
 * Cell name: bitcell_2X
 * View name: schematic
 
 .subckt bitcell_2X Q QB RBL RWL RWLB VDD VSS WBL WBLB WWL
- XM6 net1 QB VDD VDD pch_mac w=205.00n l=40n 
- XM5 net1 RWLB RBL VDD pch_mac w=205.00n l=40n
- XM4 Q QB VDD VDD pch_mac w=205.00n  l=40n
- XM3 QB Q VDD VDD pch_mac w=205.00n l=40n 
- XM9 WBL WWL Q VSS nch_mac w=310.0n  l=40n 
- XM8 WBLB WWL QB VSS nch_mac w=310.0n  l=40n 
- XM7 net1 QB VSS VSS nch_mac w=155.00n l=40n
- XM2 net1 RWL RBL VSS nch_mac w=155.00n  l=40n
- XM1 Q QB VSS VSS nch_mac w=155.00n l=40n
- XM0 QB Q VSS VSS nch_mac w=155.00n l=40n
+ XM6 net1 QB VDD VDD pch_mac w=360.0n l=60n 
+ XM5 net1 RWLB RBL VDD pch_mac w=360.0n l=60n
+ XM4 Q QB VDD VDD pch_mac w=360.0n  l=60n
+ XM3 QB Q VDD VDD pch_mac w=360.0n l=60n 
+ XM9 WBL WWL Q VSS nch_mac w=240.0n  l=60n 
+ XM8 WBLB WWL QB VSS nch_mac w=240.0n  l=60n 
+ XM7 net1 QB VSS VSS nch_mac w=120.0n l=60n
+ XM2 net1 RWL RBL VSS nch_mac w=120.0n  l=60n
+ XM1 Q QB VSS VSS nch_mac w=120.0n l=60n
+ XM0 QB Q VSS VSS nch_mac w=120.0n l=60n
 .ends bitcell_2X
 .SUBCKT array WWL3 WWL2 WWL1 WWL0 RWL3 RWL2 RWL1 RWL0 RWLB3
 + RWLB2 RWLB1 RWLB0 WBL15 WBL14 WBL13 WBL12 WBL11 WBL10

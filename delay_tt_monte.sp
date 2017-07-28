@@ -1,8 +1,5 @@
  * include model and subckts
-.lib '/home/eda/dk/TSMC_40_sun/models/hspice/crn45gs_1d2_1d8_ud15_lk_v2d0_2_shrink0d9_embedded_usage.l' TTGlobalCorner_LocalMC_MOS_MOSCAP
-*.lib '/home/eda/dk/TSMC_40_sun/models/hspice/crn45gs_1d2_1d8_ud15_lk_v2d0_2.l' tt
-*.lib '/home/eda/dk/TSMC_40_sun/models/hspice/crn45gs_1d2_1d8_ud15_lk_v2d0_2.l' total
-*.lib '/home/eda/dk/TSMC_40_sun/models/hspice/toplevel.l' TOP_TT
+ .lib '/home/eda/dk/TSMC_65/cadence/models/hspice/crn65gplus_2d5_lk_v1d0.l' tt
 
  .TEMP 25
 *define options
@@ -22,7 +19,6 @@
  .param load=5.9e-16
 
   .include 'mem_top.init.sp'
- * .include 'sram4x16.sp'
  .include 'sram4x16_mac.sp'
 
  xsram clk wen a1 a0 
@@ -85,16 +81,9 @@
 * + 40n 0
 * + '40n + slew*supply0' 'supply0'
 
-
-*.PLOT TRAN v(*)
-*.PROBE TRAN V(q0)
-*.plot Tran v(wen) v(q0) v(q1) v(q2) v(q3) v(q4) v(q5) v(q6) v(q7) v(q8) v(q9) v(q10) v(q11) 
-*+v(q12) v(q13) v(q14) v(q15) v(d0) v(d1) v(d2) v(d3) v(d4) v(d5) v(clk) v(xsram.Xmem_top.Xarray0.XI4.Q) 
-*+v(xsram.Xmem_top.Xarray0.XI12.Q) v(xsram.Xmem_top.Xarray0.WWL0) +v(xsram.Xmem_top.Xarray0.RWL0) +v(xsram.Xmem_top.Xarray0.WBL1)
-*+v(xsram.Xmem_top.wbl0) v(xsram.Xmem_top.wbl_latch0) v(*)
 .param st=100n
 .TRAN 3.5P 'st' SWEEP Monte=200 
-*.option MODMONTE=1
+
 *measure write 0/1
 .measure tran delay_write1_worst trig v(clk) val='supply0/2' rise=1 td=45n targ v(xsram.Xmem_top.Xarray0.XI4.Q) val='supply0/2' rise=1 td=45n
 .measure tran delay_write0_worst trig v(clk) val='supply0/2' rise=1 td=45n targ v(xsram.Xmem_top.Xarray0.XI12.Q) val='supply0/2' fall=1 td=45n
