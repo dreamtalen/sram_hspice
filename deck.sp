@@ -1,7 +1,7 @@
  * include model and subckts
- .lib '/home/wjin/TSMC_65/hspice_model/crn65gplus_2d5_lk_v1d0.l' tt
- .lib '/home/wjin/TSMC_65/hspice_model/crn65gplus_2d5_lk_v1d0.l' tt_hvt
- .lib '/home/wjin/TSMC_65/hspice_model/crn65gplus_2d5_lk_v1d0.l' tt_lvt
+ .lib '/home/eda/dk/TSMC_65/cadence/models/hspice/crn65gplus_2d5_lk_v1d0.l' tt
+ .lib '/home/eda/dk/TSMC_65/cadence/models/hspice/crn65gplus_2d5_lk_v1d0.l' tt_hvt
+ .lib '/home/eda/dk/TSMC_65/cadence/models/hspice/crn65gplus_2d5_lk_v1d0.l' tt_lvt
 
  .TEMP 25
 *define options
@@ -11,7 +11,7 @@
  .option gmindc=1.0e-15
  .option method=gear
  .option runlvl=5
- .option probe=1
+* .option probe=1
 
 *define parameters
  .param supply0=0.35
@@ -19,14 +19,14 @@
  .param slew=3.44e-10
  .param load=5.9e-16
 
- .include 'mem_top.init.sp'
+ .include 'mem_pipeline.init.sp'
  * .include 'mem_top.sp'
- .include 'mem_top_mac.sp'
+ * .include 'mem_top_mac.sp'
+ .include 'mem_pipeline.cdl'
 
- xmem wen a4 a3 a2 a1 a0 
- + d15 d14 d13 d12 d11 d10 d9 d8 d7 d6 d5 d4 d3 d2 d1 d0 
- + q15 q14 q13 q12 q11 q10 q9 q8 q7 q6 q5 q4 q3 q2 q1 q0 
- + vdd vss mem_top
+ xmem_pipeline clk wen A[5] A[4] A[3] A[2] A[1] A[0] D[15] D[14] D[13] 
++ D[12] D[11] D[10] D[9] D[8] D[7] D[6] D[5] D[4] D[3] D[2] D[1] D[0] Q[15] 
++ Q[14] Q[13] Q[12] Q[11] Q[10] Q[9] Q[8] Q[7] Q[6] Q[5] Q[4] Q[3] Q[2] Q[1] Q[0] mem_pipeline
 
  vvdd vdd 0 dc 'supply0'
  vvss vss 0 dc 0
@@ -69,20 +69,11 @@
  va2 a2 0 dc 0
  va3 a3 0 dc 0
  va4 a4 0 dc 0
- vwen wen 0 pwl
- + 0 'supply0'
- + 50n 'supply0'
- + '50n + slew*supply0' 0
- + 100n 0
- + '100n + slew*supply0' 'supply0'
 
+ vclk clk 0 pulse(0 'supply0' 10n 'slew' 'slew' 10n 20n)
+ vwen wen 0 pulse('supply0' 0 15n 'slew' 'slew' 20n 40n)
 
-* .PROBE TRAN v(wen)
-* .PROBE TRAN V(q0)
-* .TRAN 3.5P 300n
-.param st=300n
-.TRAN 3.5P 'st' SWEEP MONTE=300
+.param st=100n
+.TRAN 3.5P 'st' SWEEP MONTE=3
 .option MCBRIEF=1
-.measure tran delay__wen__lh__q__lh trig v(wen) val=0.175 rise=1 targ v(q0) val=0.175 rise=1 td=100n
-.measure tran max_q max v(q0) from=100n to='st'
 .end
