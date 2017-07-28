@@ -84,7 +84,7 @@
 * + '40n + slew*supply0' 'supply0'
 
 .param st=100n
-.TRAN 3.5P 'st' SWEEP Monte=200 
+.TRAN 3.5P 'st' SWEEP Monte=3 
 
 *measure write 0/1
 .measure tran delay_write1_worst trig v(clk) val='supply0/2' rise=1 td=45n targ v(xsram.Xmem_top.Xarray0.XI4.Q) val='supply0/2' rise=1 td=45n
