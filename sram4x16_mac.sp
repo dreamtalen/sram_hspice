@@ -1,5 +1,5 @@
 
-.INCLUDE "/home/wjin/lincx/library/spice/cmn65gp_mvt_stdcells.sp"
+.INCLUDE "/home/wjin/lincx/library/spice/cmn65gp_mvt_stdcells_mac.sp"
 
 .INCLUDE "array_mac.sp"
 
