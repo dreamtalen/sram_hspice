@@ -69,11 +69,12 @@
  va2 a2 0 dc 0
  va3 a3 0 dc 0
  va4 a4 0 dc 0
+ va5 a5 0 dc 0
 
  vclk clk 0 pulse(0 'supply0' 10n 'slew' 'slew' 10n 20n)
  vwen wen 0 pulse('supply0' 0 15n 'slew' 'slew' 20n 40n)
 
 .param st=100n
-.TRAN 3.5P 'st' SWEEP MONTE=3
+.TRAN 3.5P 'st' SWEEP MONTE=1
 .option MCBRIEF=1
 .end
