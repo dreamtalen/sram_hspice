@@ -10,7 +10,7 @@
  .option gmin=1e-15
  .option gmindc=1.0e-15
  .option method=gear
- .option probe=1
+*.option probe=1
  .option MCBRIEF=1
 
 *define parameters
