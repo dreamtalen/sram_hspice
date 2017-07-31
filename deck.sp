@@ -49,21 +49,21 @@
  ccap_q14 q14 0 'load'
  ccap_q15 q15 0 'load'
  vd0 d0 0 dc 'supply0'
- vd1 d1 0 dc 'supply0'
- vd2 d2 0 dc 'supply0'
- vd3 d3 0 dc 'supply0'
- vd4 d4 0 dc 'supply0'
- vd5 d5 0 dc 'supply0'
- vd6 d6 0 dc 'supply0'
- vd7 d7 0 dc 'supply0'
- vd8 d8 0 dc 'supply0'
- vd9 d9 0 dc 'supply0'
- vd10 d10 0 dc 'supply0'
- vd11 d11 0 dc 'supply0'
- vd12 d12 0 dc 'supply0'
- vd13 d13 0 dc 'supply0'
- vd14 d14 0 dc 'supply0'
- vd15 d15 0 dc 'supply0'
+ vd1 d1 0 dc 0
+ vd2 d2 0 dc 0
+ vd3 d3 0 dc 0
+ vd4 d4 0 dc 0
+ vd5 d5 0 dc 0
+ vd6 d6 0 dc 0
+ vd7 d7 0 dc 0
+ vd8 d8 0 dc 0
+ vd9 d9 0 dc 0
+ vd10 d10 0 dc 0
+ vd11 d11 0 dc 0
+ vd12 d12 0 dc 0
+ vd13 d13 0 dc 0
+ vd14 d14 0 dc 0
+ vd15 d15 0 dc 0
  va0 a0 0 dc 0
  va1 a1 0 dc 0
  va2 a2 0 dc 0
