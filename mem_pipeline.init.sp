@@ -2,7 +2,21 @@
 
 .ic
 + xmem_pipeline.Xmem_top.Xarray_0.Xword_0__w.XU.Q = 0
++ xmem_pipeline.Xmem_top.Xarray_0.Xword_0__w.XU0.Q = 0
 + xmem_pipeline.Xmem_top.Xarray_0.Xword_0__w.XU1.Q = 0
++ xmem_pipeline.Xmem_top.Xarray_0.Xword_0__w.XU2.Q = 0
++ xmem_pipeline.Xmem_top.Xarray_0.Xword_0__w.XU3.Q = 0
++ xmem_pipeline.Xmem_top.Xarray_0.Xword_0__w.XU4.Q = 0
++ xmem_pipeline.Xmem_top.Xarray_0.Xword_0__w.XU5.Q = 0
++ xmem_pipeline.Xmem_top.Xarray_0.Xword_0__w.XU6.Q = 0
++ xmem_pipeline.Xmem_top.Xarray_0.Xword_0__w.XU7.Q = 0
++ xmem_pipeline.Xmem_top.Xarray_0.Xword_0__w.XU8.Q = 0
++ xmem_pipeline.Xmem_top.Xarray_0.Xword_0__w.XU9.Q = 0
++ xmem_pipeline.Xmem_top.Xarray_0.Xword_0__w.XU10.Q = 0
++ xmem_pipeline.Xmem_top.Xarray_0.Xword_0__w.XU11.Q = 0
++ xmem_pipeline.Xmem_top.Xarray_0.Xword_0__w.XU12.Q = 0
++ xmem_pipeline.Xmem_top.Xarray_0.Xword_0__w.XU13.Q = 0
++ xmem_pipeline.Xmem_top.Xarray_0.Xword_0__w.XU14.Q = 0
 + xmem_pipeline.Xmem_top.Xarray_0.Xword_1__w.XU.Q = 0 
 + xmem_pipeline.Xmem_top.Xarray_0.Xword_2__w.XU.Q = 0
 + xmem_pipeline.Xmem_top.Xarray_0.Xword_3__w.XU.Q = 0
