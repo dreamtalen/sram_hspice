@@ -206,38 +206,38 @@ XU128 WEN n53 n77 VDD VSS AN2XD1LVT
 + wbl[5] wbl[4] wbl[3] wbl[2] wbl[1] wbl[0] wblb[15] wblb[14] wblb[13] wblb[12] 
 + wblb[11] wblb[10] wblb[9] wblb[8] wblb[7] wblb[6] wblb[5] wblb[4] wblb[3] 
 + wblb[2] wblb[1] wblb[0] 
-.CONNECT wbl[15] data0[15]
-.CONNECT data0[15] data[15]
-.CONNECT wbl[14] data0[14]
-.CONNECT data0[14] data[14]
-.CONNECT wbl[13] data0[13]
-.CONNECT data0[13] data[13]
-.CONNECT wbl[12] data0[12]
-.CONNECT data0[12] data[12]
-.CONNECT wbl[11] data0[11]
-.CONNECT data0[11] data[11]
-.CONNECT wbl[10] data0[10]
-.CONNECT data0[10] data[10]
-.CONNECT wbl[9] data0[9]
-.CONNECT data0[9] data[9]
-.CONNECT wbl[8] data0[8]
-.CONNECT data0[8] data[8]
-.CONNECT wbl[7] data0[7]
-.CONNECT data0[7] data[7]
-.CONNECT wbl[6] data0[6]
-.CONNECT data0[6] data[6]
-.CONNECT wbl[5] data0[5]
-.CONNECT data0[5] data[5]
-.CONNECT wbl[4] data0[4]
-.CONNECT data0[4] data[4]
-.CONNECT wbl[3] data0[3]
-.CONNECT data0[3] data[3]
-.CONNECT wbl[2] data0[2]
-.CONNECT data0[2] data[2]
-.CONNECT wbl[1] data0[1]
-.CONNECT data0[1] data[1]
-.CONNECT wbl[0] data0[0]
-.CONNECT data0[0] data[0]
+*.CONNECT wbl[15] data0[15]
+*.CONNECT data0[15] data[15]
+*.CONNECT wbl[14] data0[14]
+*.CONNECT data0[14] data[14]
+*.CONNECT wbl[13] data0[13]
+*.CONNECT data0[13] data[13]
+*.CONNECT wbl[12] data0[12]
+*.CONNECT data0[12] data[12]
+*.CONNECT wbl[11] data0[11]
+*.CONNECT data0[11] data[11]
+*.CONNECT wbl[10] data0[10]
+*.CONNECT data0[10] data[10]
+*.CONNECT wbl[9] data0[9]
+*.CONNECT data0[9] data[9]
+*.CONNECT wbl[8] data0[8]
+*.CONNECT data0[8] data[8]
+*.CONNECT wbl[7] data0[7]
+*.CONNECT data0[7] data[7]
+*.CONNECT wbl[6] data0[6]
+*.CONNECT data0[6] data[6]
+*.CONNECT wbl[5] data0[5]
+*.CONNECT data0[5] data[5]
+*.CONNECT wbl[4] data0[4]
+*.CONNECT data0[4] data[4]
+*.CONNECT wbl[3] data0[3]
+*.CONNECT data0[3] data[3]
+*.CONNECT wbl[2] data0[2]
+*.CONNECT data0[2] data[2]
+*.CONNECT wbl[1] data0[1]
+*.CONNECT data0[1] data[1]
+*.CONNECT wbl[0] data0[0]
+*.CONNECT data0[0] data[0]
 XU1 data[15] wblb[15] VDD VSS INVD1LVT 
 XU2 data[14] wblb[14] VDD VSS INVD1LVT 
 XU3 data[13] wblb[13] VDD VSS INVD1LVT 
@@ -2555,22 +2555,22 @@ Xbitlines D[15] D[14] D[13] D[12] D[11] D[10] D[9] D[8] D[7] D[6] D[5] D[4]
 + wbl[8] wbl[7] wbl[6] wbl[5] wbl[4] wbl[3] wbl[2] wbl[1] wbl[0] wblb[15] 
 + wblb[14] wblb[13] wblb[12] wblb[11] wblb[10] wblb[9] wblb[8] wblb[7] wblb[6] 
 + wblb[5] wblb[4] wblb[3] wblb[2] wblb[1] wblb[0] bitlines 
-Xwbl_latch_0 wbl[0] CLK wbl_latch[0] VDD VSS DFQD1 
-Xwbl_latch_1 wbl[1] CLK wbl_latch[1] VDD VSS DFQD1 
-Xwbl_latch_2 wbl[2] CLK wbl_latch[2] VDD VSS DFQD1 
-Xwbl_latch_3 wbl[3] CLK wbl_latch[3] VDD VSS DFQD1 
-Xwbl_latch_4 wbl[4] CLK wbl_latch[4] VDD VSS DFQD1 
-Xwbl_latch_5 wbl[5] CLK wbl_latch[5] VDD VSS DFQD1 
-Xwbl_latch_6 wbl[6] CLK wbl_latch[6] VDD VSS DFQD1 
-Xwbl_latch_7 wbl[7] CLK wbl_latch[7] VDD VSS DFQD1 
-Xwbl_latch_8 wbl[8] CLK wbl_latch[8] VDD VSS DFQD1 
-Xwbl_latch_9 wbl[9] CLK wbl_latch[9] VDD VSS DFQD1 
-Xwbl_latch_10 wbl[10] CLK wbl_latch[10] VDD VSS DFQD1 
-Xwbl_latch_11 wbl[11] CLK wbl_latch[11] VDD VSS DFQD1 
-Xwbl_latch_12 wbl[12] CLK wbl_latch[12] VDD VSS DFQD1 
-Xwbl_latch_13 wbl[13] CLK wbl_latch[13] VDD VSS DFQD1 
-Xwbl_latch_14 wbl[14] CLK wbl_latch[14] VDD VSS DFQD1 
-Xwbl_latch_15 wbl[15] CLK wbl_latch[15] VDD VSS DFQD1 
+Xwbl_latch_0 D[0] CLK wbl_latch[0] VDD VSS DFQD1 
+Xwbl_latch_1 D[1] CLK wbl_latch[1] VDD VSS DFQD1 
+Xwbl_latch_2 D[2] CLK wbl_latch[2] VDD VSS DFQD1 
+Xwbl_latch_3 D[3] CLK wbl_latch[3] VDD VSS DFQD1 
+Xwbl_latch_4 D[4] CLK wbl_latch[4] VDD VSS DFQD1 
+Xwbl_latch_5 D[5] CLK wbl_latch[5] VDD VSS DFQD1 
+Xwbl_latch_6 D[6] CLK wbl_latch[6] VDD VSS DFQD1 
+Xwbl_latch_7 D[7] CLK wbl_latch[7] VDD VSS DFQD1 
+Xwbl_latch_8 D[8] CLK wbl_latch[8] VDD VSS DFQD1 
+Xwbl_latch_9 D[9] CLK wbl_latch[9] VDD VSS DFQD1 
+Xwbl_latch_10 D[10] CLK wbl_latch[10] VDD VSS DFQD1 
+Xwbl_latch_11 D[11] CLK wbl_latch[11] VDD VSS DFQD1 
+Xwbl_latch_12 D[12] CLK wbl_latch[12] VDD VSS DFQD1 
+Xwbl_latch_13 D[13] CLK wbl_latch[13] VDD VSS DFQD1 
+Xwbl_latch_14 D[14] CLK wbl_latch[14] VDD VSS DFQD1 
+Xwbl_latch_15 D[15] CLK wbl_latch[15] VDD VSS DFQD1 
 Xwblb_latch_0 wblb[0] CLK wblb_latch[0] VDD VSS DFQD1 
 Xwblb_latch_1 wblb[1] CLK wblb_latch[1] VDD VSS DFQD1 
 Xwblb_latch_2 wblb[2] CLK wblb_latch[2] VDD VSS DFQD1 
