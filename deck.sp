@@ -11,6 +11,7 @@
  .option gmindc=1.0e-15
  .option method=gear
  .option runlvl=5
+ .option mcbrief=1
 * .option probe=1
 
 *define parameters
@@ -74,7 +75,14 @@
  vclk clk 0 pulse(0 'supply0' 10n 'slew' 'slew' 10n 20n)
  vwen wen 0 pulse('supply0' 0 15n 'slew' 'slew' 20n 40n)
 
-.param st=100n
-.TRAN 3.5P 'st' SWEEP MONTE=50
+.param st=80n
+.TRAN 3.5P 'st' SWEEP MONTE=1
 .option MCBRIEF=1
+.measure TRAN delay_write1
++	TRIG v(xmem_pipeline.Xmem_top.wwl_wire[0]) VAL='supply0/2' RISE=1
++	TARG v(xmem_pipeline.Xmem_top.Xarray_0.Xword_0__w.XU.Q) VAL='supply0/2' RISE=1
+
+.measure TRAN delay_read1
++	TRIG v(xmem_pipeline.Xmem_top.rwl[0]) VAL='supply0/2' RISE=2
++	TARG v(xmem_pipeline.q_wire[0]) VAL='supply0/2' RISE=1
 .end
