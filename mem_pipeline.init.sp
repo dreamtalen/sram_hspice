@@ -2,7 +2,8 @@
 
 .ic
 + xmem_pipeline.Xmem_top.Xarray_0.Xword_0__w.XU.Q = 0
-+ xmem_pipeline.Xmem_top.Xarray_0.Xword_1__w.XU.Q = 0
++ xmem_pipeline.Xmem_top.Xarray_0.Xword_0__w.XU1.Q = 0
++ xmem_pipeline.Xmem_top.Xarray_0.Xword_1__w.XU.Q = 0 
 + xmem_pipeline.Xmem_top.Xarray_0.Xword_2__w.XU.Q = 0
 + xmem_pipeline.Xmem_top.Xarray_0.Xword_3__w.XU.Q = 0
 + xmem_pipeline.Xmem_top.Xarray_0.Xword_4__w.XU.Q = 0
