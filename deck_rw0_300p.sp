@@ -75,7 +75,7 @@
  vwen wen 0 pulse('supply0' 0 15n 'slew' 'slew' 20n 40n)
 
 .param st=100n
-.TRAN 3.5P 'st' SWEEP MONTE=100
+.TRAN 3.5P 'st' SWEEP MONTE=300
 .option MCBRIEF=1
 .measure TRAN delay_write0
 +	TRIG v(xmem_pipeline.Xmem_top.wwl_wire[0]) VAL='supply0/2' RISE=1
