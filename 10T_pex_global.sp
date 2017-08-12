@@ -53,7 +53,7 @@ vwwlb WWLB 0 pulse (supply0 0 'pw-5*slew' 'slew*2.5' 'slew*2.5' pw '2*pw')
 vwbl WBL 0 pulse (0 supply0 'pw-5*slew' 'slew*2.5' 'slew*2.5' 'pw*2' 'pw*4')
 vwblb WBLB 0 pulse (supply0 0 'pw-5*slew' 'slew*2.5' 'slew*2.5' 'pw*2' 'pw*4')
 
-.TRAN 3.5P 'st' SWEEP MONTE=10
+.TRAN 3.5P 'st' SWEEP MONTE=300
 .measure TRAN write1 AVG v(XI17.N_Q_MM1_d) FROM=49ns TO=51ns
 .measure TRAN read1 AVG v(rbl) FROM=69ns TO=71ns
 .measure TRAN write0 AVG v(XI17.N_Q_MM1_d) FROM=89ns TO=91ns
