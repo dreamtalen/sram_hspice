@@ -21,7 +21,7 @@
  .param load=5.9e-16
 
 .include "10TSRAM.pex.netlist.pex"
-.subckt 10TSRAM  GND RBL RWL RWLB VDD WBL WBLB WWLB
+.subckt SRAM10T_max  GND RBL RWL RWLB VDD WBL WBLB WWLB
 
 MM8 N_NET08_MM8_d N_RWL_MM8_g N_RBL_MM8_s N_GND_MM10_b NCH L=6e-08 W=1.2e-07 M=1
 MM7 N_NET08_MM7_d N_QB_MM7_g N_GND_MM7_s N_GND_MM10_b NCH L=6e-08 W=1.2e-07 M=1
@@ -40,7 +40,7 @@ MM4 N_QB_MM4_d N_Q_MM4_g N_VDD_MM4_s N_VDD_MM5_b PCH L=6e-08 W=3.6e-07 M=1
 
 .ends
 
-XI17 gnd RBL RWL RWLB vdd WBL WBLB WWLB 10TSRAM
+XI17 gnd RBL RWL RWLB vdd WBL WBLB WWLB SRAM10T_max
 
 vvdd VDD 0 dc 'supply0'
 ccap_q RBL 0 'load'
