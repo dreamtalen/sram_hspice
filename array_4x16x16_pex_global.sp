@@ -1,7 +1,8 @@
  * include model and subckts
- .lib '/home/eda/dk/TSMC_65/cadence/models/hspice/crn65gplus_2d5_lk_v1d0.l' tt
- .lib '/home/eda/dk/TSMC_65/cadence/models/hspice/crn65gplus_2d5_lk_v1d0.l' tt_hvt
- .lib '/home/eda/dk/TSMC_65/cadence/models/hspice/crn65gplus_2d5_lk_v1d0.l' tt_lvt
+ .lib '/home/eda/dk/TSMC_65/cadence/models/hspice/crn65gplus_2d5_lk_v1d0.l' mc
+ .lib '/home/eda/dk/TSMC_65/cadence/models/hspice/crn65gplus_2d5_lk_v1d0.l' mc_hvt
+ .lib '/home/eda/dk/TSMC_65/cadence/models/hspice/crn65gplus_2d5_lk_v1d0.l' mc_lvt
+ .lib '/home/eda/dk/TSMC_65/cadence/models/hspice/crn65gplus_2d5_lk_v1d0.l' stat
 
  .TEMP 25
 *define options
@@ -20,12 +21,12 @@
  .param slew=3.44e-10
  .param load=5.9e-16
 
- .include 'mem_pipeline.init.sp'
- .include 'mem_pipeline.cdl'
+ .include 'mem_top.init.sp'
+ .include 'mem_top.cdl'
 
- xmem_pipeline clk wen A5 A4 A3 A2 A1 A0 D15 D14 D13 
+ xmem_top clk wen A5 A4 A3 A2 A1 A0 D15 D14 D13 
 + D12 D11 D10 D9 D8 D7 D6 D5 D4 D3 D2 D1 D0 Q15 
-+ Q14 Q13 Q12 Q11 Q10 Q9 Q8 Q7 Q6 Q5 Q4 Q3 Q2 Q1 Q0 mem_pipeline
++ Q14 Q13 Q12 Q11 Q10 Q9 Q8 Q7 Q6 Q5 Q4 Q3 Q2 Q1 Q0 mem_top
 
  vvdd vdd 0 dc 'supply0'
  vvss vss 0 dc 0
@@ -74,13 +75,6 @@
  vwen wen 0 pulse('supply0' 0 15n 'slew' 'slew' 20n 40n)
 
 .param st=80n
-.TRAN 3.5P 'st' SWEEP MONTE=100
+.TRAN 3.5P 'st' SWEEP MONTE=3
 .option MCBRIEF=1
-.measure TRAN delay_write1
-+	TRIG v(xmem_pipeline.Xmem_top.wwl_wire[0]) VAL='supply0/2' RISE=1
-+	TARG v(xmem_pipeline.Xmem_top.Xarray_0.Xword_0__w.XU.Q) VAL='supply0/2' RISE=1
-
-.measure TRAN delay_read1
-+	TRIG v(xmem_pipeline.Xmem_top.rwl[0]) VAL='supply0/2' RISE=2
-+	TARG v(xmem_pipeline.q_wire[0]) VAL='supply0/2' RISE=1
 .end
