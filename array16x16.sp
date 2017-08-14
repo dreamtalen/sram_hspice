@@ -4,7 +4,7 @@
 * Version "v2011.3_18.12"
 * 
 .include "/home/wjin/dmtalen/sram/10TSRAM_PEX/16x16_10T_new.pex.netlist.pex"
-.subckt array16x16_10T_new  wwlb[15] wwlb[14] wwlb[13] wwlb[12] wwlb[11] wwlb[10]
+.subckt array16x16_10T_new wwlb[15] wwlb[14] wwlb[13] wwlb[12] wwlb[11] wwlb[10]
 + wwlb[9] wwlb[8] wwlb[7] wwlb[6] wwlb[5] wwlb[4] wwlb[3] wwlb[2] wwlb[1]
 + wwlb[0] rwl[15] rwl[14] rwl[13] rwl[12] rwl[11] rwl[10] rwl[9] rwl[8] rwl[7]
 + rwl[6] rwl[5] rwl[4] rwl[3] rwl[2] rwl[1] rwl[0] rwlb[15] rwlb[14] rwlb[13]
@@ -14,6 +14,7 @@
 + wblb[6] wblb[5] wblb[4] wblb[3] wblb[2] wblb[1] wblb[0] rbl[15] rbl[14]
 + rbl[13] rbl[12] rbl[11] rbl[10] rbl[9] rbl[8] rbl[7] rbl[6] rbl[5] rbl[4]
 + rbl[3] rbl[2] rbl[1] rbl[0]
+
 * 
 * WBLB[0]	WBLB[0]
 * WBL[0]	WBL[0]
