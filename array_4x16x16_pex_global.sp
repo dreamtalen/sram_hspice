@@ -24,9 +24,9 @@
  .include 'mem_top.init.sp'
  .include 'mem_top.cdl'
 
- xmem_top clk wen A5 A4 A3 A2 A1 A0 D15 D14 D13 
+ xmem_pipeline clk wen A5 A4 A3 A2 A1 A0 D15 D14 D13 
 + D12 D11 D10 D9 D8 D7 D6 D5 D4 D3 D2 D1 D0 Q15 
-+ Q14 Q13 Q12 Q11 Q10 Q9 Q8 Q7 Q6 Q5 Q4 Q3 Q2 Q1 Q0 mem_top
++ Q14 Q13 Q12 Q11 Q10 Q9 Q8 Q7 Q6 Q5 Q4 Q3 Q2 Q1 Q0 mem_pipeline
 
  vvdd vdd 0 dc 'supply0'
  vvss vss 0 dc 0
