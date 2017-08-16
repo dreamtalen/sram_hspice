@@ -1,5 +1,6 @@
 
 .ic
++ xmem_pipeline.xmem_top.v(wbl_latch[0]) = 0
 + xmem_pipeline.xmem_top.Xarray_0.N_XI797/Q_XI797/MM10_s = 0
 + xmem_pipeline.xmem_top.q_wire_1[0] = 0
 + xmem_pipeline.xmem_top.q_wire_1[1] = 0
