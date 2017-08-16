@@ -211,20 +211,6 @@ XU15 data[1] wblb[1] VDD VSS INVD1LVT
 XU16 data[0] wblb[0] VDD VSS INVD1LVT 
 .ENDS
 
-*.SUBCKT array16x16_10T_new wwlb[15] wwlb[14] wwlb[13] wwlb[12] wwlb[11] wwlb[10] 
-*+ wwlb[9] wwlb[8] wwlb[7] wwlb[6] wwlb[5] wwlb[4] wwlb[3] wwlb[2] wwlb[1] 
-*+ wwlb[0] rwl[15] rwl[14] rwl[13] rwl[12] rwl[11] rwl[10] rwl[9] rwl[8] rwl[7] 
-*+ rwl[6] rwl[5] rwl[4] rwl[3] rwl[2] rwl[1] rwl[0] rwlb[15] rwlb[14] rwlb[13] 
-*+ rwlb[12] rwlb[11] rwlb[10] rwlb[9] rwlb[8] rwlb[7] rwlb[6] rwlb[5] rwlb[4] 
-*+ rwlb[3] rwlb[2] rwlb[1] rwlb[0] wbl[15] wbl[14] wbl[13] wbl[12] wbl[11] 
-*+ wbl[10] wbl[9] wbl[8] wbl[7] wbl[6] wbl[5] wbl[4] wbl[3] wbl[2] wbl[1] wbl[0] 
-*+ wblb[15] wblb[14] wblb[13] wblb[12] wblb[11] wblb[10] wblb[9] wblb[8] wblb[7] 
-*+ wblb[6] wblb[5] wblb[4] wblb[3] wblb[2] wblb[1] wblb[0] rbl[15] rbl[14] 
-*+ rbl[13] rbl[12] rbl[11] rbl[10] rbl[9] rbl[8] rbl[7] rbl[6] rbl[5] rbl[4] 
-*+ rbl[3] rbl[2] rbl[1] rbl[0] VDD GND
-*.ENDS
-
-
 .SUBCKT mem_top CLK WEN A[5] A[4] A[3] A[2] A[1] A[0] D[15] D[14] D[13] D[12] 
 + D[11] D[10] D[9] D[8] D[7] D[6] D[5] D[4] D[3] D[2] D[1] D[0] Q[15] Q[14] 
 + Q[13] Q[12] Q[11] Q[10] Q[9] Q[8] Q[7] Q[6] Q[5] Q[4] Q[3] Q[2] Q[1] Q[0] 
@@ -437,7 +423,7 @@ Xarray_0 wwlb_wire[15] wwlb_wire[14] wwlb_wire[13] wwlb_wire[12] wwlb_wire[11]
 + wblb_latch[2] wblb_latch[1] wblb_latch[0] q_wire_0[15] q_wire_0[14] 
 + q_wire_0[13] q_wire_0[12] q_wire_0[11] q_wire_0[10] q_wire_0[9] q_wire_0[8] 
 + q_wire_0[7] q_wire_0[6] q_wire_0[5] q_wire_0[4] q_wire_0[3] q_wire_0[2] 
-+ q_wire_0[1] q_wire_0[0] VDD GND array16x16_10T_new 
++ q_wire_0[1] q_wire_0[0] VDD VSS array16x16_10T_new 
 XU67 A[4] A[5] n8 VDD VSS NR2XD0LVT 
 XU68 n2 A[5] n7 VDD VSS NR2XD0LVT 
 XU70 q_wire_1[3] n7 q_wire_0[3] n8 n19 VDD VSS AOI22D0 
