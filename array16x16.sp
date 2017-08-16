@@ -14,7 +14,7 @@
 + wblb[15] wblb[14] wblb[13] wblb[12] wblb[11] wblb[10] wblb[9] wblb[8] wblb[7]
 + wblb[6] wblb[5] wblb[4] wblb[3] wblb[2] wblb[1] wblb[0] rbl[15] rbl[14]
 + rbl[13] rbl[12] rbl[11] rbl[10] rbl[9] rbl[8] rbl[7] rbl[6] rbl[5] rbl[4]
-+ rbl[3] rbl[2] rbl[1] rbl[0]
++ rbl[3] rbl[2] rbl[1] rbl[0] VDD GND
 
 * 
 * WBLB[0]	WBLB[0]
