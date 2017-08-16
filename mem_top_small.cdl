@@ -221,7 +221,7 @@ XU16 data[0] wblb[0] VDD VSS INVD1LVT
 *+ wblb[15] wblb[14] wblb[13] wblb[12] wblb[11] wblb[10] wblb[9] wblb[8] wblb[7] 
 *+ wblb[6] wblb[5] wblb[4] wblb[3] wblb[2] wblb[1] wblb[0] rbl[15] rbl[14] 
 *+ rbl[13] rbl[12] rbl[11] rbl[10] rbl[9] rbl[8] rbl[7] rbl[6] rbl[5] rbl[4] 
-*+ rbl[3] rbl[2] rbl[1] rbl[0] 
+*+ rbl[3] rbl[2] rbl[1] rbl[0] VDD GND
 *.ENDS
 
 
@@ -437,7 +437,7 @@ Xarray_0 wwlb_wire[15] wwlb_wire[14] wwlb_wire[13] wwlb_wire[12] wwlb_wire[11]
 + wblb_latch[2] wblb_latch[1] wblb_latch[0] q_wire_0[15] q_wire_0[14] 
 + q_wire_0[13] q_wire_0[12] q_wire_0[11] q_wire_0[10] q_wire_0[9] q_wire_0[8] 
 + q_wire_0[7] q_wire_0[6] q_wire_0[5] q_wire_0[4] q_wire_0[3] q_wire_0[2] 
-+ q_wire_0[1] q_wire_0[0] array16x16_10T_new 
++ q_wire_0[1] q_wire_0[0] VDD GND array16x16_10T_new 
 XU67 A[4] A[5] n8 VDD VSS NR2XD0LVT 
 XU68 n2 A[5] n7 VDD VSS NR2XD0LVT 
 XU70 q_wire_1[3] n7 q_wire_0[3] n8 n19 VDD VSS AOI22D0 
