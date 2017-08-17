@@ -78,4 +78,10 @@
 .TRAN 3.5P 'st'
 *.TRAN 3.5P 'st' SWEEP MONTE=10
 .option MCBRIEF=1
+.measure TRAN delay_write1
++	TRIG v(xmem_pipeline.xmem_top.wwlb_wire[0]) VAL='supply0/2' RISE=1
++	TARG v(xmem_pipeline.xmem_top.Xarray_0.N_XI797/Q_XI797/MM10_s) VAL='supply0/2' RISE=1
+.measure TRAN delay_read1
++	TRIG v(xmem_pipeline.Xmem_top.rwl[0]) VAL='supply0/2' RISE=2
++	TARG v(xmem_pipeline.q_wire[0]) VAL='supply0/2' RISE=1
 .end
