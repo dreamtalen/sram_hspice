@@ -430,6 +430,40 @@ XBUF13 wwlb_wire[13] wwlb_wire_buffer[13] VDD VSS decoder_buffer
 XBUF14 wwlb_wire[14] wwlb_wire_buffer[14] VDD VSS decoder_buffer
 XBUF15 wwlb_wire[15] wwlb_wire_buffer[15] VDD VSS decoder_buffer
 
+XBUF16 rwl[0] rwl_buffer[0] VDD VSS decoder_buffer
+XBUF17 rwl[1] rwl_buffer[1] VDD VSS decoder_buffer
+XBUF18 rwl[2] rwl_buffer[2] VDD VSS decoder_buffer
+XBUF19 rwl[3] rwl_buffer[3] VDD VSS decoder_buffer
+XBUF20 rwl[4] rwl_buffer[4] VDD VSS decoder_buffer
+XBUF21 rwl[5] rwl_buffer[5] VDD VSS decoder_buffer
+XBUF22 rwl[6] rwl_buffer[6] VDD VSS decoder_buffer
+XBUF23 rwl[7] rwl_buffer[7] VDD VSS decoder_buffer
+XBUF24 rwl[8] rwl_buffer[8] VDD VSS decoder_buffer
+XBUF25 rwl[9] rwl_buffer[9] VDD VSS decoder_buffer
+XBUF26 rwl[10] rwl_buffer[10] VDD VSS decoder_buffer
+XBUF27 rwl[11] rwl_buffer[11] VDD VSS decoder_buffer
+XBUF28 rwl[12] rwl_buffer[12] VDD VSS decoder_buffer
+XBUF29 rwl[13] rwl_buffer[13] VDD VSS decoder_buffer
+XBUF30 rwl[14] rwl_buffer[14] VDD VSS decoder_buffer
+XBUF31 rwl[15] rwl_buffer[15] VDD VSS decoder_buffer
+
+XBUF32 rwlb[0] rwlb_buffer[0] VDD VSS decoder_buffer
+XBUF33 rwlb[1] rwlb_buffer[1] VDD VSS decoder_buffer
+XBUF34 rwlb[2] rwlb_buffer[2] VDD VSS decoder_buffer
+XBUF35 rwlb[3] rwlb_buffer[3] VDD VSS decoder_buffer
+XBUF36 rwlb[4] rwlb_buffer[4] VDD VSS decoder_buffer
+XBUF37 rwlb[5] rwlb_buffer[5] VDD VSS decoder_buffer
+XBUF38 rwlb[6] rwlb_buffer[6] VDD VSS decoder_buffer
+XBUF39 rwlb[7] rwlb_buffer[7] VDD VSS decoder_buffer
+XBUF40 rwlb[8] rwlb_buffer[8] VDD VSS decoder_buffer
+XBUF41 rwlb[9] rwlb_buffer[9] VDD VSS decoder_buffer
+XBUF42 rwlb[10] rwlb_buffer[10] VDD VSS decoder_buffer
+XBUF43 rwlb[11] rwlb_buffer[11] VDD VSS decoder_buffer
+XBUF44 rwlb[12] rwlb_buffer[12] VDD VSS decoder_buffer
+XBUF45 rwlb[13] rwlb_buffer[13] VDD VSS decoder_buffer
+XBUF46 rwlb[14] rwlb_buffer[14] VDD VSS decoder_buffer
+XBUF47 rwlb[15] rwlb_buffer[15] VDD VSS decoder_buffer
+
 Xarray_0 
 + wwlb_wire_buffer[15] wwlb_wire_buffer[14] wwlb_wire_buffer[13] wwlb_wire_buffer[12] wwlb_wire_buffer[11] 
 + wwlb_wire_buffer[10] wwlb_wire_buffer[9] wwlb_wire_buffer[8] wwlb_wire_buffer[7] wwlb_wire_buffer[6] 
@@ -437,10 +471,12 @@ Xarray_0
 * + wwlb_wire[15] wwlb_wire[14] wwlb_wire[13] wwlb_wire[12] wwlb_wire[11] 
 * + wwlb_wire[10] wwlb_wire[9] wwlb_wire[8] wwlb_wire[7] wwlb_wire[6] 
 * + wwlb_wire[5] wwlb_wire[4] wwlb_wire[3] wwlb_wire[2] wwlb_wire[1] wwlb_wire[0] 
-+ rwl[15] rwl[14] rwl[13] rwl[12] rwl[11] rwl[10] rwl[9] rwl[8] rwl[7] rwl[6] 
-+ rwl[5] rwl[4] rwl[3] rwl[2] rwl[1] rwl[0] rwlb[15] rwlb[14] rwlb[13] rwlb[12] 
-+ rwlb[11] rwlb[10] rwlb[9] rwlb[8] rwlb[7] rwlb[6] rwlb[5] rwlb[4] rwlb[3] 
-+ rwlb[2] rwlb[1] rwlb[0] wbl_latch[15] wbl_latch[14] wbl_latch[13] 
++ rwl_buffer[15] rwl_buffer[14] rwl_buffer[13] rwl_buffer[12] rwl_buffer[11] rwl_buffer[10] rwl_buffer[9] rwl_buffer[8] rwl_buffer[7] rwl_buffer[6] 
++ rwl_buffer[5] rwl_buffer[4] rwl_buffer[3] rwl_buffer[2] rwl_buffer[1] rwl_buffer[0] 
++ rwlb_buffer[15] rwlb_buffer[14] rwlb_buffer[13] rwlb_buffer[12] 
++ rwlb_buffer[11] rwlb_buffer[10] rwlb_buffer[9] rwlb_buffer[8] rwlb_buffer[7] rwlb_buffer[6] rwlb_buffer[5] rwlb_buffer[4] rwlb_buffer[3] 
++ rwlb_buffer[2] rwlb_buffer[1] rwlb_buffer[0]
++ wbl_latch[15] wbl_latch[14] wbl_latch[13] 
 + wbl_latch[12] wbl_latch[11] wbl_latch[10] wbl_latch[9] wbl_latch[8] 
 + wbl_latch[7] wbl_latch[6] wbl_latch[5] wbl_latch[4] wbl_latch[3] wbl_latch[2] 
 + wbl_latch[1] wbl_latch[0] wblb_latch[15] wblb_latch[14] wblb_latch[13] 
