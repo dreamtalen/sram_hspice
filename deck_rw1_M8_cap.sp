@@ -80,5 +80,12 @@
 .param st=80n
 .TRAN 3.5P 'st'
 * .TRAN 3.5P 'st' SWEEP MONTE=100
+.measure TRAN delay_write1
++	TRIG v(xmem_pipeline.Xmem_top.wwl_wire[0]) VAL='supply0/2' RISE=1
++	TARG v(xmem_pipeline.Xmem_top.Xarray_0.Xword_0__w.XU.Q) VAL='supply0/2' RISE=1
+
+.measure TRAN delay_read1
++	TRIG v(xmem_pipeline.Xmem_top.rwl[0]) VAL='supply0/2' RISE=2
++	TARG v(xmem_pipeline.q_wire[0]) VAL='supply0/2' RISE=1
 .option MCBRIEF=1
 .end
