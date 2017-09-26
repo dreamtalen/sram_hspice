@@ -81,6 +81,11 @@
 .TRAN 3.5P 'st'
 * .TRAN 3.5P 'st' SWEEP MONTE=100
 .meas tran cp param='cap(xmem_pipeline.xmem_top.xarray_0.rwlb[0])' 
+.meas tran cp1 param='cap(xmem_pipeline.xmem_top.xarray_0.rwlb[1])' 
+.meas tran cp2 param='cap(xmem_pipeline.xmem_top.xarray_0.rwlb[2])' 
+.meas tran cp3 param='cap(xmem_pipeline.xmem_top.xarray_0.rwlb[3])' 
+.meas tran cp4 param='cap(xmem_pipeline.xmem_top.xarray_0.rwlb[4])' 
+.meas tran cp5 param='cap(xmem_pipeline.xmem_top.xarray_0.rwlb[5])' 
 .measure TRAN delay_write1
 +	TRIG v(xmem_pipeline.Xmem_top.wwl_wire[0]) VAL='supply0/2' RISE=1
 +	TARG v(xmem_pipeline.Xmem_top.Xarray_0.Xword_0__w.XU.Q) VAL='supply0/2' RISE=1
