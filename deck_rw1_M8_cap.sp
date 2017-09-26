@@ -13,7 +13,7 @@
  .option runlvl=5
  .option measdgt=6
  .option numdgt=6
- .option captab
+ * .option captab
 * .option probe=1
 
 *define parameters
@@ -80,7 +80,7 @@
 .param st=80n
 .TRAN 3.5P 'st'
 * .TRAN 3.5P 'st' SWEEP MONTE=100
-.meas tran cp param='cap(xmem_pipeline.xmem_top.xarray_0.xword_0__w.xu.xm0)' 
+.meas tran cp param='cap(xmem_pipeline.xmem_top.xarray_0.rwlb[0])' 
 .measure TRAN delay_write1
 +	TRIG v(xmem_pipeline.Xmem_top.wwl_wire[0]) VAL='supply0/2' RISE=1
 +	TARG v(xmem_pipeline.Xmem_top.Xarray_0.Xword_0__w.XU.Q) VAL='supply0/2' RISE=1
