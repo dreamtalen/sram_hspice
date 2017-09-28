@@ -76,6 +76,7 @@
 
 .param st=80n
 .TRAN 3.5P 'st' SWEEP MONTE=1
+.option MCBRIEF=1
 .measure TRAN write0 AVG v(xmem_pipeline.Xmem_top.Xarray_0.Xword_0__w.XU.Q) FROM=69ns TO=71ns
 .measure TRAN read0 AVG v(xmem_pipeline.q_wire[0]) FROM=78ns TO=80ns
 .measure TRAN delay_write0
