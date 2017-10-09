@@ -30,24 +30,6 @@
 
  vvdd vdd 0 dc 'supply0'
  vvss vss 0 dc 0
- cvdd vdd 0 'load'
- cvss vss 0 'load'
- ccap_q0 q0 0 'load'
- ccap_q1 q1 0 'load'
- ccap_q2 q2 0 'load'
- ccap_q3 q3 0 'load'
- ccap_q4 q4 0 'load'
- ccap_q5 q5 0 'load'
- ccap_q6 q6 0 'load'
- ccap_q7 q7 0 'load'
- ccap_q8 q8 0 'load'
- ccap_q9 q9 0 'load'
- ccap_q10 q10 0 'load'
- ccap_q11 q11 0 'load'
- ccap_q12 q12 0 'load'
- ccap_q13 q13 0 'load'
- ccap_q14 q14 0 'load'
- ccap_q15 q15 0 'load'
  vd0 d0 0 dc 'supply0'
  vd1 d1 0 dc 0
  vd2 d2 0 dc 0
