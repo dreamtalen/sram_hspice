@@ -1,0 +1,54 @@
+$DATA1 SOURCE='HSPICE' VERSION='F-2011.09 64-BIT'
+.TITLE '* include model and subckts'
+ cap_wwlb_wire[15] cap_wwlb_wire[14] cap_wwlb_wire[13]  
+ cap_wwlb_wire[12] cap_wwlb_wire[11] cap_wwlb_wire[10]  
+ cap_wwlb_wire[9] cap_wwlb_wire[8] cap_wwlb_wire[7] cap_wwlb_wire[6]  
+ cap_wwlb_wire[5] cap_wwlb_wire[4] cap_wwlb_wire[3] cap_wwlb_wire[2]  
+ cap_wwlb_wire[1] cap_wwlb_wire[0] cap_rwl[15]      cap_rwl[14]       
+ cap_rwl[13]      cap_rwl[12]      cap_rwl[11]      cap_rwl[10]       
+ cap_rwl[9]       cap_rwl[8]       cap_rwl[7]       cap_rwl[6]        
+ cap_rwl[5]       cap_rwl[4]       cap_rwl[3]       cap_rwl[2]        
+ cap_rwl[1]       cap_rwl[0]       cap_rwlb[15]     cap_rwlb[14]      
+ cap_rwlb[13]     cap_rwlb[12]     cap_rwlb[11]     cap_rwlb[10]      
+ cap_rwlb[9]      cap_rwlb[8]      cap_rwlb[7]      cap_rwlb[6]       
+ cap_rwlb[5]      cap_rwlb[4]      cap_rwlb[3]      cap_rwlb[2]       
+ cap_rwlb[1]      cap_rwlb[0]      cap_wbl_latch[15] cap_wbl_latch[14]  
+ cap_wbl_latch[13] cap_wbl_latch[12] cap_wbl_latch[11]  
+ cap_wbl_latch[10] cap_wbl_latch[9] cap_wbl_latch[8] cap_wbl_latch[7]  
+ cap_wbl_latch[6] cap_wbl_latch[5] cap_wbl_latch[4] cap_wbl_latch[3]  
+ cap_wbl_latch[2] cap_wbl_latch[1] cap_wbl_latch[0] cap_wblb_latch[15]  
+ cap_wblb_latch[14] cap_wblb_latch[13] cap_wblb_latch[12]  
+ cap_wblb_latch[11] cap_wblb_latch[10] cap_wblb_latch[9]  
+ cap_wblb_latch[8] cap_wblb_latch[7] cap_wblb_latch[6]  
+ cap_wblb_latch[5] cap_wblb_latch[4] cap_wblb_latch[3]  
+ cap_wblb_latch[2] cap_wblb_latch[1] cap_wblb_latch[0]  
+ cap_q_wire_0[15] cap_q_wire_0[14] cap_q_wire_0[13] cap_q_wire_0[12]  
+ cap_q_wire_0[11] cap_q_wire_0[10] cap_q_wire_0[9]  cap_q_wire_0[8]   
+ cap_q_wire_0[7]  cap_q_wire_0[6]  cap_q_wire_0[5]  cap_q_wire_0[4]   
+ cap_q_wire_0[3]  cap_q_wire_0[2]  cap_q_wire_0[1]  cap_q_wire_0[0]   
+ temper           alter#            
+  1.188e-13        1.188e-13        1.188e-13        1.188e-13        
+  1.188e-13        1.188e-13        1.188e-13        1.188e-13        
+  1.188e-13        1.188e-13        1.188e-13        1.188e-13        
+  1.188e-13        1.188e-13        1.188e-13        1.188e-13        
+    0.               0.               0.               0.             
+    0.               0.               0.               0.             
+    0.               0.               0.               0.             
+    0.               0.               0.               0.             
+    0.               0.               0.               0.             
+    0.               0.               0.               0.             
+    0.               0.               0.               0.             
+    0.               0.               0.               0.             
+  1.188e-13        1.188e-13        1.188e-13        1.188e-13        
+  1.188e-13        1.188e-13        1.188e-13        1.188e-13        
+  1.188e-13        1.188e-13        1.188e-13        1.188e-13        
+  1.188e-13        1.188e-13        1.188e-13        1.188e-13        
+  1.188e-13        1.188e-13        1.188e-13        1.188e-13        
+  1.188e-13        1.188e-13        1.188e-13        1.188e-13        
+  1.188e-13        1.188e-13        1.188e-13        1.188e-13        
+  1.188e-13        1.188e-13        1.188e-13        1.188e-13        
+  1.188e-13        1.188e-13        1.188e-13        1.188e-13        
+  1.188e-13        1.188e-13        1.188e-13        1.188e-13        
+  1.188e-13        1.188e-13        1.188e-13        1.188e-13        
+  1.188e-13        1.188e-13        1.188e-13        1.188e-13        
+   25.0000        1                 
