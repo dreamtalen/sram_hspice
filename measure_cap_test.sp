@@ -31,6 +31,7 @@ VIN A GND PULSE 0 'SUPPLY' 50ps 10ps 10ps 480ps 1ns
 .option MCBRIEF=1
 .meas tran cp_inv1_Z param='cap(XU0.Z)'
 .meas tran cp_inv1_I param='cap(XU0.I)'
+.print ac cap(XU0.Z) cap(XU0.I)
 .end
 
 
