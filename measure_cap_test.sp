@@ -21,7 +21,7 @@
  .param slew=3.44e-10
  .param load=5.9e-16
 
-XU0 I Z VDD VSS INVD1LVT
+XU0 I ZN VDD VSS INVD1LVT
 
 VDD VDD GND 'SUPPLY'
 VIN A GND PULSE 0 'SUPPLY' 50ps 10ps 10ps 480ps 1ns
@@ -31,7 +31,7 @@ VIN A GND PULSE 0 'SUPPLY' 50ps 10ps 10ps 480ps 1ns
 .option MCBRIEF=1
 * .meas tran cp_inv1_Z param='cap(XU0.Z)'
 * .meas tran cp_inv1_I param='cap(XU0.I)'
-.print ac cap(XU0.Z) cap(XU0.I)
+.print ac cap(XU0.ZN) cap(XU0.I)
 .end
 
 
