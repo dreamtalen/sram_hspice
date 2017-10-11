@@ -2,7 +2,6 @@
  .lib '/home/eda/dk/TSMC_65/cadence/models/hspice/crn65gplus_2d5_lk_v1d0.l' tt
  .lib '/home/eda/dk/TSMC_65/cadence/models/hspice/crn65gplus_2d5_lk_v1d0.l' tt_hvt
  .lib '/home/eda/dk/TSMC_65/cadence/models/hspice/crn65gplus_2d5_lk_v1d0.l' tt_lvt
-.INCLUDE "/home/wjin/lincx/library/spice/cmn65gp_mvt_stdcells_mac.sp" 
 
  .TEMP 25
 *define options
