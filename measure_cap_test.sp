@@ -16,7 +16,8 @@
 * .option probe=1
 
 *define parameters
- .param supply=0.35
+ * .param supply=0.35
+ .param supply=1
  .param SD=1n
  .param slew=3.44e-10
  .param load=5.9e-16
