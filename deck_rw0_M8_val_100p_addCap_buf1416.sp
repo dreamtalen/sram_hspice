@@ -75,7 +75,7 @@
  vwen wen 0 pulse('supply0' 0 15n 'slew' 'slew' 20n 40n)
 
 .param st=120n
-.TRAN 3.5P 'st' SWEEP MONTE=5
+.TRAN 3.5P 'st' SWEEP MONTE=50
 * .TRAN 3.5P 'st'
 .option MCBRIEF=1
 .measure TRAN write0 AVG v(xmem_pipeline.Xmem_top.Xarray_0.Xword_0__w.XU.Q) FROM=69ns TO=71ns
