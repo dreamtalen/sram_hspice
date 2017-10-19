@@ -74,7 +74,7 @@
  vclk clk 0 pulse(0 'supply0' 20n 'slew' 'slew' 20n 40n)
  vwen wen 0 pulse('supply0' 0 25n 'slew' 'slew' 40n 80n)
 
-.param st=100n
+.param st=200n
 .TRAN 3.5P 'st'
 * .tran 0.001ns '10*period' sweep monte=list(26)
 * .TRAN 3.5P 'st' SWEEP MONTE=100
