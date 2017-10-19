@@ -2830,16 +2830,16 @@ XQ_reg_0_ q_wire[0] CLK Q[0] VDD VSS DFQD1
 .ENDS
 
 .SUBCKT bitcell WBL WBLB WWL RWL RWLB RBL
- XM6 net1 QB VDD VDD pch w=480.0n l=60n 
- XM5 net1 RWLB RBL VDD pch w=120.0n l=60n
- XM4 Q QB VDD VDD pch w=240.0n  l=60n
- XM3 QB Q VDD VDD pch w=240.0n l=60n 
- XM9 WBL WWL Q VSS nch w=180.0n  l=60n 
- XM8 WBLB WWL QB VSS nch w=180.0n  l=60n 
- XM7 net1 QB VSS VSS nch w=160.0n l=60n
- XM2 net1 RWL RBL VSS nch w=120.0n  l=60n
- XM1 Q QB VSS VSS nch w=120.0n l=60n
- XM0 QB Q VSS VSS nch w=120.0n l=60n
+M6 net1 QB VDD VDD pch w=480.0n l=60n 
+M5 net1 RWLB RBL VDD pch w=120.0n l=60n
+M4 Q QB VDD VDD pch w=240.0n  l=60n
+M3 QB Q VDD VDD pch w=240.0n l=60n 
+M9 WBL WWL Q VSS nch w=180.0n  l=60n 
+M8 WBLB WWL QB VSS nch w=180.0n  l=60n 
+M7 net1 QB VSS VSS nch w=160.0n l=60n
+M2 net1 RWL RBL VSS nch w=120.0n  l=60n
+M1 Q QB VSS VSS nch w=120.0n l=60n
+M0 QB Q VSS VSS nch w=120.0n l=60n
 .ENDS
 .GLOBAL VDD 
 .GLOBAL VSS 
