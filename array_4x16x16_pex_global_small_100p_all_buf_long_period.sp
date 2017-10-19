@@ -75,9 +75,9 @@
  vwen wen 0 pulse('supply0' 0 25n 'slew' 'slew' 40n 80n)
 
 .param st=200n
-.TRAN 3.5P 'st'
+* .TRAN 3.5P 'st'
 * .tran 0.001ns '10*period' sweep monte=list(26)
-* .TRAN 3.5P 'st' SWEEP MONTE=100
+.TRAN 3.5P 'st' SWEEP MONTE=100
 .option MCBRIEF=1
 .measure TRAN write1 AVG v(xmem_pipeline.xmem_top.Xarray_0.N_XI797/Q_XI797/MM10_s) FROM=79ns TO=81ns
 .measure TRAN read1 AVG v(xmem_pipeline.q_wire[0]) FROM=98ns TO=100ns
