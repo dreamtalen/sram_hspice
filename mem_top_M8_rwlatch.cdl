@@ -410,7 +410,22 @@ XLN12 rwl[12] CLK rwl_latch[12] VDD VSS LNQD1LVT
 XLN13 rwl[13] CLK rwl_latch[13] VDD VSS LNQD1LVT
 XLN14 rwl[14] CLK rwl_latch[14] VDD VSS LNQD1LVT
 XLN15 rwl[15] CLK rwl_latch[15] VDD VSS LNQD1LVT
-
+XBLN0 rwlb[0] CLK rwlb_latch[0] VDD VSS LNQD1LVT
+XBLN1 rwlb[1] CLK rwlb_latch[1] VDD VSS LNQD1LVT
+XBLN2 rwlb[2] CLK rwlb_latch[2] VDD VSS LNQD1LVT
+XBLN3 rwlb[3] CLK rwlb_latch[3] VDD VSS LNQD1LVT
+XBLN4 rwlb[4] CLK rwlb_latch[4] VDD VSS LNQD1LVT
+XBLN5 rwlb[5] CLK rwlb_latch[5] VDD VSS LNQD1LVT
+XBLN6 rwlb[6] CLK rwlb_latch[6] VDD VSS LNQD1LVT
+XBLN7 rwlb[7] CLK rwlb_latch[7] VDD VSS LNQD1LVT
+XBLN8 rwlb[8] CLK rwlb_latch[8] VDD VSS LNQD1LVT
+XBLN9 rwlb[9] CLK rwlb_latch[9] VDD VSS LNQD1LVT
+XBLN10 rwlb[10] CLK rwlb_latch[10] VDD VSS LNQD1LVT
+XBLN11 rwlb[11] CLK rwlb_latch[11] VDD VSS LNQD1LVT
+XBLN12 rwlb[12] CLK rwlb_latch[12] VDD VSS LNQD1LVT
+XBLN13 rwlb[13] CLK rwlb_latch[13] VDD VSS LNQD1LVT
+XBLN14 rwlb[14] CLK rwlb_latch[14] VDD VSS LNQD1LVT
+XBLN15 rwlb[15] CLK rwlb_latch[15] VDD VSS LNQD1LVT
 
 Xdecoder WEN A[5] A[4] A[3] A[2] A[1] A[0] wwlb[63] wwlb[62] wwlb[61] wwlb[60] 
 + wwlb[59] wwlb[58] wwlb[57] wwlb[56] wwlb[55] wwlb[54] wwlb[53] wwlb[52] 
@@ -433,9 +448,9 @@ Xarray_0 wwlb_wire[15] wwlb_wire[14] wwlb_wire[13] wwlb_wire[12] wwlb_wire[11]
 + wwlb_wire[10] wwlb_wire[9] wwlb_wire[8] wwlb_wire[7] wwlb_wire[6] 
 + wwlb_wire[5] wwlb_wire[4] wwlb_wire[3] wwlb_wire[2] wwlb_wire[1] wwlb_wire[0] 
 + rwl_latch[15] rwl_latch[14] rwl_latch[13] rwl_latch[12] rwl_latch[11] rwl_latch[10] rwl_latch[9] rwl_latch[8] rwl_latch[7] rwl_latch[6] 
-+ rwl_latch[5] rwl_latch[4] rwl_latch[3] rwl_latch[2] rwl_latch[1] rwl_latch[0] rwlb[15] rwlb[14] rwlb[13] rwlb[12] 
-+ rwlb[11] rwlb[10] rwlb[9] rwlb[8] rwlb[7] rwlb[6] rwlb[5] rwlb[4] rwlb[3] 
-+ rwlb[2] rwlb[1] rwlb[0] wbl_latch[15] wbl_latch[14] wbl_latch[13] 
++ rwl_latch[5] rwl_latch[4] rwl_latch[3] rwl_latch[2] rwl_latch[1] rwl_latch[0] rwlb_latch[15] rwlb_latch[14] rwlb_latch[13] rwlb_latch[12] 
++ rwlb_latch[11] rwlb_latch[10] rwlb_latch[9] rwlb_latch[8] rwlb_latch[7] rwlb_latch[6] rwlb_latch[5] rwlb_latch[4] rwlb_latch[3] 
++ rwlb_latch[2] rwlb_latch[1] rwlb_latch[0] wbl_latch[15] wbl_latch[14] wbl_latch[13] 
 + wbl_latch[12] wbl_latch[11] wbl_latch[10] wbl_latch[9] wbl_latch[8] 
 + wbl_latch[7] wbl_latch[6] wbl_latch[5] wbl_latch[4] wbl_latch[3] wbl_latch[2] 
 + wbl_latch[1] wbl_latch[0] wblb_latch[15] wblb_latch[14] wblb_latch[13] 
