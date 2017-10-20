@@ -21,8 +21,8 @@
  .param slew=3.44e-10
  .param load=5.9e-16
 
- .include 'mem_top_M8.midbuf.init.sp'
- .include 'mem_top_M8_midbuf.cdl'
+ .include 'mem_top_M8.init.sp'
+ .include 'mem_top_M8_2buf_11416.cdl'
 
  xmem_pipeline clk wen A5 A4 A3 A2 A1 A0 D15 D14 D13 
 + D12 D11 D10 D9 D8 D7 D6 D5 D4 D3 D2 D1 D0 Q15 
@@ -75,12 +75,14 @@
  vwen wen 0 pulse('supply0' 0 15n 'slew' 'slew' 20n 40n)
 
 .param st=100n
-* .TRAN 3.5P 'st'
-.TRAN 3.5P 'st' SWEEP MONTE=100
+.TRAN 3.5P 'st'
+* .TRAN 3.5P 'st' SWEEP MONTE=50
 .option MCBRIEF=1
+.measure TRAN write1 AVG v(xmem_pipeline.xmem_top.Xarray_0.N_XI797/Q_XI797/MM10_s) FROM=79ns TO=81ns
+.measure TRAN read1 AVG v(xmem_pipeline.q_wire[0]) FROM=98ns TO=100ns
 .measure TRAN delay_write1
 +	TRIG v(xmem_pipeline.xmem_top.wwlb_wire[0]) VAL='supply0/2' RISE=1 td=40n
-+	TARG v(xmem_pipeline.Xmem_top.Xarray_0.XI797.Q) VAL='supply0/2' RISE=1
++	TARG v(xmem_pipeline.xmem_top.Xarray_0.N_XI797/Q_XI797/MM10_s) VAL='supply0/2' RISE=1
 .measure TRAN delay_read1
 +	TRIG v(xmem_pipeline.Xmem_top.rwl[0]) VAL='supply0/2' RISE=1 td=40n
 +	TARG v(xmem_pipeline.q_wire[0]) VAL='supply0/2' RISE=1
