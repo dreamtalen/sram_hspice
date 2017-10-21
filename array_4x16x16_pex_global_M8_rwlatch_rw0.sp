@@ -79,12 +79,12 @@
 * .TRAN 3.5P 'st'
 .TRAN 3.5P 'st' SWEEP MONTE=3
 .option MCBRIEF=1
-.measure TRAN write1 AVG v(xmem_pipeline.xmem_top.Xarray_0.N_XI797/Q_XI797/MM10_s) FROM=79ns TO=81ns
-.measure TRAN read1 AVG v(xmem_pipeline.q_wire[0]) FROM=98ns TO=100ns
-.measure TRAN delay_write1
+.measure TRAN write0 AVG v(xmem_pipeline.xmem_top.Xarray_0.N_XI797/Q_XI797/MM10_s) FROM=79ns TO=81ns
+.measure TRAN read0 AVG v(xmem_pipeline.q_wire[0]) FROM=98ns TO=100ns
+.measure TRAN delay_write0
 +	TRIG v(xmem_pipeline.xmem_top.wwlb_wire[0]) VAL='supply0/2' RISE=1 td=40n
 +	TARG v(xmem_pipeline.xmem_top.Xarray_0.N_XI797/Q_XI797/MM10_s) VAL='supply0/2' FALL=1
-.measure TRAN delay_read1
-+	TRIG v(xmem_pipeline.Xmem_top.rwl[0]) VAL='supply0/2' RISE=1 td=40n
-+	TARG v(xmem_pipeline.q_wire[0]) VAL='supply0/2' RISE=1
+.measure TRAN delay_read0
++	TRIG v(xmem_pipeline.Xmem_top.rwl_latch[0]) VAL='supply0/2' RISE=1 td=40n
++	TARG v(xmem_pipeline.q_wire[0]) VAL='supply0/2' FALL=1
 .end
