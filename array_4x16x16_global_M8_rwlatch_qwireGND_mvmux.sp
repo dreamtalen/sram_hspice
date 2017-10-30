@@ -21,7 +21,7 @@
  .param slew=3.44e-10
  .param load=5.9e-16
 
- .include 'mem_top_M8.init.sp'
+ .include 'mem_top_M8.midbuf.init.sp'
  .include 'mem_top_M8_rwlatch_qwireGND_mvmux.cdl'
 
  xmem_pipeline clk wen A5 A4 A3 A2 A1 A0 D15 D14 D13 
