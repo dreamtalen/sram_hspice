@@ -22,7 +22,7 @@
  .param load=5.9e-16
 
  .include 'mem_top_M8.midbuf.init.sp'
- .include 'mem_top_M8_rwlatch_qwireGND_nopex.cdl'
+ .include 'mem_top_M8_qwireGND_nopex.cdl'
 
  xmem_pipeline clk wen A5 A4 A3 A2 A1 A0 D15 D14 D13 
 + D12 D11 D10 D9 D8 D7 D6 D5 D4 D3 D2 D1 D0 Q15 
