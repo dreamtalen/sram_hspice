@@ -79,5 +79,5 @@
 .option MCBRIEF=1
 .measure TRAN delay_read1
 +	TRIG v(xmem_pipeline.Xmem_top.rwl_buf[0]) VAL='supply0/2' RISE=1 td=40n
-+	TARG v(xmem_pipeline.q_wire[0]) VAL='supply0/2' RISE=1
++	TARG v(xmem_pipeline.Xmem_top.q_wire_0[0]) VAL='supply0/2' RISE=1
 .end
