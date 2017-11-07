@@ -46,7 +46,7 @@ MM4 QB Q VDD VDD pch l=60n w=240.0n m=1
 * View Name:    schematic
 ************************************************************************
 
-.SUBCKT array8x16_10T_M8 GND RBL[0] RBL[1] RBL[2] RBL[3] RBL[4] RBL[5] RBL[6] 
+.SUBCKT 8x16_10T_M8 GND RBL[0] RBL[1] RBL[2] RBL[3] RBL[4] RBL[5] RBL[6] 
 + RBL[7] RBL[8] RBL[9] RBL[10] RBL[11] RBL[12] RBL[13] RBL[14] RBL[15] RWL[0] 
 + RWL[1] RWL[2] RWL[3] RWL[4] RWL[5] RWL[6] RWL[7] RWLB[0] RWLB[1] RWLB[2] RWLB[3] 
 + RWLB[4] RWLB[5] RWLB[6] RWLB[7] VDD WBL[0] WBL[1] WBL[2] WBL[3] WBL[4] WBL[5] 
