@@ -78,9 +78,13 @@
 .TRAN 3.5P 'st'
 .option MCBRIEF=1
 .measure TRAN delay_write0
-+	TRIG v(xmem_pipeline.xmem_top.wwlb_wire[0]) VAL='supply0/2' RISE=1 td=40n
++	TRIG v(xmem_pipeline.xmem_top.wwlb_wire_buf[0]) VAL='supply0/2' RISE=1 td=40n
 +	TARG v(xmem_pipeline.xmem_top.Xarray_0.N_XI797/Q_XI797/MM10_s) VAL='supply0/2' FALL=1
 .measure TRAN delay_read0
-+	TRIG v(xmem_pipeline.Xmem_top.rwl_latch[0]) VAL='supply0/2' RISE=1 td=40n
-+	TARG v(xmem_pipeline.Xmem_top.q_wire_0[0]) VAL='supply0/2' FALL=1
++	TRIG v(xmem_pipeline.Xmem_top.rwl_buf[0]) VAL='supply0/2' RISE=1 td=40n
++	TARG v(xmem_pipeline.Xmem_top.q_wire_0_buf[0]) VAL='supply0/2' FALL=1
+.measure TRAN delay_read0_b
++	TRIG v(xmem_pipeline.Xmem_top.rwlb_buf[0]) VAL='supply0/2' FALL=1 td=40n
++	TARG v(xmem_pipeline.Xmem_top.q_wire_0_buf[0]) VAL='supply0/2' FALL=1
 .end
+
